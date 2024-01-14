@@ -5,16 +5,19 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  
 }
 
+
 html {
-  background-color: red;
+  background-image: url(../images/site/small_check.jpg);
 }
 
 body {
   font-size: 16px;
 }
+
+
+
 
 header, main, footer {
   max-width: 900px;
@@ -41,6 +44,7 @@ header#top-header {
 .siteName a {
   color: black;
   text-decoration: none;
+  font-family: 'Lato', sans-serif;
 }
 
 #tools {
@@ -51,6 +55,7 @@ header#top-header {
   text-decoration: none;
   color: black;
   padding: 5px 10px;
+  font-family: 'Lato', sans-serif;
 }
 
 /****** Navigation styling********/
@@ -64,9 +69,9 @@ nav ul {
   display: flex;
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 1rem;
   justify-content: space-between;
-  background-color: yellow;
+  background-color: #FDC500;
   text-align: center;
 }
 
@@ -78,7 +83,15 @@ nav a {
   text-decoration: none;
   color: black;
   font-weight: bold;
+  text-transform: capitalize;
   padding: 1rem;
+  font-family: 'Lato', sans-serif;
+}
+
+nav a:hover {
+  background-color: #003F88;
+  color: white;
+  text-transform: uppercase;
 }
 
 /*** Inside main styling*****/
@@ -86,6 +99,7 @@ nav a {
 h1 {
   font-size: 20px;
   padding: 1rem;
+  font-family: 'Lato', sans-serif;
 }
 
 .hero-text {
@@ -99,11 +113,52 @@ h1 {
   padding: 1.5rem;
 }
 
+.hero-text h2 {
+  font-family: 'Lato', sans-serif;
+  padding-bottom: 0.5rem;
+  font-size: 16px;
+}
+
+.hero-text p {
+  font-family: 'Lato', sans-serif;
+  padding-bottom: 1rem;
+  font-size: 12px;
+}
+
+.hero-text button {
+  background-color: #FDC500;
+  padding: 0.5rem;
+  color: white;
+}
+
+.hero-text a {
+  border-radius: 25px;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  border: 1px solid whitesmoke;
+  font-family: 'Lato', sans-serif;
+  text-decoration: none;
+  background-color: #FDC500;
+  color: black;
+  font-weight: bold;
+}
+
+.hero-text a:hover {
+  background-color: #003F88;
+  color: white;
+}
+
+
 /***main hero section***/
 
 .hero {
   position: relative;
   overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  padding: 1rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  border-radius: 10px;
 }
 
 .hero picture {
@@ -134,13 +189,21 @@ h1 {
   padding: 1rem;
   align-items: center;
   line-height: 1.5;
-  background-color: green;
+  background-color: whitesmoke;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
 
 }
 
 .overview h2 {
   text-align: center;
+  font-family: 'Lato', sans-serif;
+  padding-bottom: 1rem;
+}
+
+.overview ul li {
+  padding: 0.5rem;
+  margin-left: 1rem;
+  font-family: 'Lato', sans-serif;
 }
 
 .upgrades {
@@ -154,11 +217,10 @@ h1 {
 }
 
 
-
 .upgrades section img {
   width: 150px;
   max-width: 100%;
-  height: 100px;
+  height: auto;
   padding: 0.5rem;
 }
 
@@ -166,16 +228,41 @@ section img {
   justify-content: space-around;
 }
 
+section picture img[Attributes] {
+  aspect-ratio: auto 640 / 360;
+}
+
+
 .upgrades section {
   max-width: 200px;
   text-align: center;
-  background-color: yellow;
+  background-color: #FDC500;
+  padding-bottom: 0.5rem;
+}
+
+h3 a {
+  color: black;
+  text-decoration: none;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/****Footer styling****/
+
+footer {
+  border-top: 2px solid #003F88;
+  padding: 1rem;
+}
+
+footer p {
+  font-family: 'Lato', sans-serif;
 }
 
 @media screen and (min-width: 500px) {
   .overview{
     grid-template-columns: 1fr 1fr;
   }
+
 }
 
 @media (max-width: 768px) {
@@ -183,6 +270,7 @@ section img {
     margin-right: 5px; /* Reduce spacing between links for smaller screens */
     font-size: 10px;
   }
+
 }
 
 
