@@ -258,6 +258,8 @@ footer p {
   font-family: 'Lato', sans-serif;
 }
 
+/*******bigger screens******/
+
 @media screen and (min-width: 500px) {
   .overview{
     grid-template-columns: 1fr 1fr;
@@ -265,9 +267,11 @@ footer p {
 
 }
 
+/****smaller screens****/
+
 @media (max-width: 768px) {
   nav li {
-    margin-right: 5px; /* Reduce spacing between links for smaller screens */
+    margin-right: 5px; 
     font-size: 10px;
   }
 
