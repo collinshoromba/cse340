@@ -1,6 +1,5 @@
--- assignment2.sql
+-- assignment 2
 
--- Task 1: Insert a new record into the account table
 INSERT INTO account (account_firstname, account_lastname, account_email, account_password)
 VALUES ('Tony', 'Stark', 'tony@starkent.com', 'Iam1ronM@n');
 
